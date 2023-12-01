@@ -1,6 +1,6 @@
 export const AppConfig = {
-  site_name: 'Kooslab',
-  title: 'Kooslab',
+  site_name: 'WILLKOMMEN',
+  title: 'WILLKOMMEN',
   description: 'This is a Kooslab homepage.',
   locale: 'kr',
 };

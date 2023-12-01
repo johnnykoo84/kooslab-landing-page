@@ -15,17 +15,21 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "axios": "^1.6.2",
     "classnames": "^2.3.2",
+    "formik": "^2.4.5",
     "next": "^14.0.0",
     "next-seo": "^6.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
     "styled-jsx-plugin-postcss": "^4.0.1"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^14.0.0",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.33",
+    "@types/react-modal": "^3.16.3",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
     "autoprefixer": "^10.4.16",
