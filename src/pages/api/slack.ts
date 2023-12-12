@@ -5,8 +5,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method === 'POST') {
     console.log('@@@@@@@@@@@@@', req.body);
     try {
-      const SLACK_WEBHOOK_URL =
-        'https://hooks.slack.com/services/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';
+      const { SLACK_WEBHOOK_URL } = process.env;
 
       const data = {
         text: `New message from ${req.body.company}`,
@@ -23,7 +22,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
         ],
       };
 
-      const response = await axios.post(SLACK_WEBHOOK_URL, data, {
+      const response = await axios.post(SLACK_WEBHOOK_URL ?? '', data, {
         headers: {
           'Content-Type': 'application/json',
         },

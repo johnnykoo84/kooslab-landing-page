@@ -1,4 +1,3 @@
-import axios from 'axios';
 import { Field, Form, Formik } from 'formik';
 import React from 'react';
 
@@ -14,7 +13,19 @@ const SignupForm = () => (
       }}
       onSubmit={async (values) => {
         console.log('click value', values);
-        await axios.post('/api/slack', values);
+        fetch('/api/slack', {
+          method: 'POST',
+          body: JSON.stringify(values),
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }).then((response) => {
+          if (response.ok) {
+            console.log('Data sent to Slack');
+          } else {
+            console.error('Error sending data');
+          }
+        });
         // await new Promise((r) => setTimeout(r, 500));
         // alert(JSON.stringify(values, null, 2));
       }}
