@@ -12,7 +12,9 @@
         "singleQuote": true,
         "endOfLine": "auto"
       }
-    ]
+    ],
+    "no-console": "off", // Allow console.log,
+    "no-alert": "off" // Allow alert
   },
   "overrides": [
     // Configuration for TypeScript files

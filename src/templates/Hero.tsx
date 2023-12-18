@@ -25,16 +25,12 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'새로운 리더들의 빠른 조직 기여를 위한\n'}
-            <span className="text-primary-500">맞춤형 온보딩 솔루션</span>
+            {'신규입사자의 빠른 조직 랜딩을 위한\n'}
+            <span className="text-primary-500">개인 맞춤형 온보딩</span>
           </>
         }
-        description="어렵게 모신 신규 경력 입사자 분들의 빠른 조직 적응과 활약을 위한 온보딩 솔루션을 제공합니다."
-        button={
-          // <Link href="https://creativedesignsguru.com/category/nextjs/">
-          <Button xl>지금 바로 경험해보세요</Button>
-          // </Link>
-        }
+        description="신규 입사자 분들의 빠른 적응과 활약을 위한 가이드와 템플릿을 제공합니다"
+        button={<Button xl>가이드 & 템플릿 자료 요청하기</Button>}
       />
     </Section>
   </Background>

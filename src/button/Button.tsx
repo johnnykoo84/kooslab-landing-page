@@ -15,7 +15,15 @@ const Button = (props: IButtonProps) => {
   });
 
   return (
-    <div className={btnClass}>
+    <div
+      className={btnClass}
+      onClick={() =>
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth',
+        })
+      }
+    >
       {props.children}
 
       <style jsx>

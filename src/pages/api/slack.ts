@@ -6,16 +6,22 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     console.log('@@@@@@@@@@@@@', req.body);
     try {
       const { SLACK_WEBHOOK_URL } = process.env;
+      console.log('@@ this is SLACK WEBHOOK URL I am using', SLACK_WEBHOOK_URL);
+      const { company, email, name, mobile, question, agreement } = req.body;
+      const agree = agreement ? 'yes' : 'no';
 
       const data = {
-        text: `New message from ${req.body.company}`,
+        text: `New message from ${company}`,
         attachments: [
           {
             title: 'Contact details',
             fields: [
-              { title: 'Company', value: req.body.company },
-              { title: 'Email', value: req.body.email },
-              { title: 'Question', value: req.body.question },
+              { title: 'Company', value: company },
+              { title: 'Name', value: name },
+              { title: 'Email', value: email },
+              { title: 'Mobile', value: mobile },
+              { title: 'Question', value: question },
+              { title: 'Agreement', value: agree },
               // Add more fields as needed
             ],
           },
