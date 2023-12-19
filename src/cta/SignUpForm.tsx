@@ -30,7 +30,7 @@ const SignupForm = () => (
           } else {
             console.error('Error sending data');
             alert(
-              '신청이 실패하였습니다. 다시 시도해 주시거나 johnnykoo84@gmail.com으로 문의 주세요.',
+              '신청이 실패하였습니다. 다시 시도해 주시거나 johnnykoo@kooslab.net으로 문의 주세요.',
             );
           }
         });

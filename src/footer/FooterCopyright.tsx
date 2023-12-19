@@ -3,8 +3,8 @@ import { AppConfig } from '../utils/AppConfig';
 const FooterCopyright = () => (
   <div className="footer-copyright">
     {/* © Copyright {new Date().getFullYear()} {AppConfig.title}. Made with{' '} */}
-    © Copyright 2023 {AppConfig.title}. 주식회사 쿠스랩, 대표이사: 구일모,
-    사업자 번호: 199-36-01098
+    © Copyright 2023 {AppConfig.title}. 주식회사 쿠스랩 | 대표이사: 구일모 |
+    johnnykoo@kooslab.net | 사업자 번호: 199-36-01098
     {/*
      * PLEASE READ THIS SECTION
      * I'm an indie maker with limited resources and funds, I'll really appreciate if you could have a link to my website.
