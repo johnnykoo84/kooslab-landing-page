@@ -84,7 +84,7 @@ const FounderIntro = () => (
 );
 
 const About = () => (
-  <>
+  <div className="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />} />
       <div className="mx-auto max-w-7xl px-4 py-6 text-gray-800 sm:px-6 lg:px-8">
@@ -102,7 +102,7 @@ const About = () => (
       </div>
     </Section>
     <Footer />
-  </>
+  </div>
 );
 
 export default About;
