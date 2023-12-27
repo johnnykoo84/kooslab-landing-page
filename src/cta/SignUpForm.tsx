@@ -2,7 +2,7 @@ import { Field, Form, Formik } from 'formik';
 import React from 'react';
 
 const SignupForm = () => (
-  <div className="rounded bg-white py-6 shadow-md">
+  <div className="mx-auto mt-6 max-w-md rounded bg-white py-6 sm:max-w-xl lg:max-w-2xl">
     <h1 className="mb-4 text-2xl font-bold">
       신규 입사자 온보딩 가이드와 템플릿 자료를 이메일 주소로 보내드립니다.
     </h1>

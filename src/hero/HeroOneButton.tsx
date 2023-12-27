@@ -37,13 +37,15 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
         onRequestClose={closeModal}
         contentLabel="Sign Up Form"
       >
-        <SignupForm />
-        <button
-          onClick={closeModal}
-          className="w-full rounded-md border border-transparent bg-red-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
-        >
-          Close
-        </button>
+        <div className="mx-auto max-w-md sm:max-w-xl lg:max-w-2xl">
+          <SignupForm />
+          <button
+            onClick={closeModal}
+            className="w-full rounded-md border border-transparent bg-red-500 px-4 py-2 text-center text-sm font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+          >
+            닫기
+          </button>
+        </div>
       </Modal>
     </Section>
   );

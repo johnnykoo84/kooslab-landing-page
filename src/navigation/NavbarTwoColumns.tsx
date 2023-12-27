@@ -7,7 +7,7 @@ type INavbarProps = {
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
-  <div className="sticky top-0 z-50 flex flex-wrap items-center justify-start border-b-2 border-gray-200 bg-white">
+  <div className="sticky top-0 z-50 flex flex-wrap items-center justify-start border-b-2 border-gray-200 bg-gray-100">
     <div>
       <Link href="/">{props.logo}</Link>
     </div>
