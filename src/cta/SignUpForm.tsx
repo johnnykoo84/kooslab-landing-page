@@ -45,13 +45,13 @@ const SignupForm = () => (
               htmlFor="text"
               className="block text-sm font-medium text-gray-700"
             >
-              회사 이름
+              회사 및 지점 이름
             </label>
             <Field
               id="company"
               name="company"
               type="text"
-              placeholder="주식회사 대한 기업"
+              placeholder="주식회사 대한 기업 or 별다방 강남점"
               className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             />
           </div>
@@ -60,7 +60,7 @@ const SignupForm = () => (
               htmlFor="text"
               className="block text-sm font-medium text-gray-700"
             >
-              담당자 성함
+              대표님 / 사장님 / 담당자 성함
             </label>
             <Field
               id="name"
@@ -107,13 +107,13 @@ const SignupForm = () => (
               htmlFor="textarea"
               className="block text-sm font-medium text-gray-700"
             >
-              온보딩에서 어떤 어려움이 있는지 간략히 적어주세요
+              신규 직원 업무 안내 시 어떤 어려움이 있는지 간략히 적어주세요
             </label>
             <Field
               id="question"
               name="question"
               type="textarea"
-              placeholder="e.g. 매 번 온보딩 준비에 너무 많은 리소스가 필요해요"
+              placeholder="e.g. 매 번 신규 직원 출근 준비에 너무 많은 시간과 준비가 필요해요"
               className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 shadow-sm focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
             />
             <div className="flex items-center p-2">
@@ -127,7 +127,7 @@ const SignupForm = () => (
                 htmlFor="agreement"
                 className="block p-2 text-sm font-medium text-gray-700"
               >
-                [마케팅 동의] 온보딩 가이드와 템플릿 활용에 대해 직접 안내 받고
+                [마케팅 동의] 업무 가이드와 템플릿 활용에 대해 직접 안내 받고
                 싶습니다. (선택 사항)
               </label>
             </div>

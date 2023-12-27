@@ -5,9 +5,9 @@ import { Section } from '../layout/Section';
 const Banner = () => (
   <Section>
     <CTABanner
-      title="신규 입사자 온보딩을 도입/개선해 보세요."
-      subtitle="무료 온보딩 가이드와 템플릿 안내를 받아보세요."
-      button={<Button>온보딩 가이드 & 템플릿 요청하기</Button>}
+      title="신규 직원 업무 가이드 상담"
+      subtitle="온보딩 가이드 및 템플릿을 무료로 받아보세요."
+      button={<Button>상담 문의하기</Button>}
     />
   </Section>
 );

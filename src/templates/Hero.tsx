@@ -25,12 +25,12 @@ const Hero = () => (
       <HeroOneButton
         title={
           <>
-            {'신규입사자의 빠른 조직 랜딩을 위한\n'}
-            <span className="text-primary-500">개인 맞춤형 온보딩</span>
+            {'신규 직원의 즉시 전력화를 위한\n'}
+            <span className="text-primary-500">업무 안내 솔루션</span>
           </>
         }
-        description="신규 입사자 분들의 빠른 적응과 활약을 위한 가이드와 템플릿을 제공합니다"
-        button={<Button xl>가이드 & 템플릿 자료 요청하기</Button>}
+        description="사장님의 업무를 대신할 수 있는 업무 안내 솔루션을 제공합니다."
+        button={<Button xl>가이드 및 상담 요청하기</Button>}
       />
     </Section>
   </Background>
