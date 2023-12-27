@@ -25,10 +25,10 @@ const HeroOneButton = (props: IHeroOneButtonProps) => {
 
   return (
     <Section yPadding="pt-20 pb-32">
-      <h1 className="whitespace-pre-line text-5xl font-bold leading-hero text-gray-900">
+      <h1 className="justify-content-center whitespace-pre-line text-center text-5xl font-bold leading-hero text-gray-900">
         {props.title}
       </h1>
-      <div className="mb-16 mt-4 text-2xl">{props.description}</div>
+      <div className="mb-16 mt-4 text-center text-2xl">{props.description}</div>
       <header className="text-center" onClick={openModal}>
         {props.button}
       </header>
