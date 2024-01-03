@@ -14,8 +14,8 @@ const Hero = () => (
             <span className="text-primary-500">업무 교육 솔루션</span>
           </>
         }
-        description="단기 계약 근로,아르바이트 직원분들을 위한 업무 교육 도구를 제공합니다."
-        button={<Button xl>가이드 및 상담 요청하기</Button>}
+        description="단기 계약 근로,아르바이트 직원분들을 위한 업무 교육 도구를 제공합니다."
+        button={<Button xl>가이드 및 상담 요청하기</Button>}
       />
     </Section>
   </Background>

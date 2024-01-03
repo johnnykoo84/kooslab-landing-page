@@ -87,11 +87,14 @@ const About = () => (
   <div className="bg-gray-100">
     <Section yPadding="py-6">
       <NavbarTwoColumns logo={<Logo xl />} />
-      <div className="mx-auto max-w-7xl px-4 py-6 text-gray-800 sm:px-6 lg:px-8">
+      <div
+        className="mx-auto max-w-7xl px-4 py-6 text-gray-800 sm:px-6 lg:px-8"
+        style={{ fontSize: 'smaller' }}
+      >
         <div className="gap-10">
           <Paragraph
             subject="Mission"
-            texts={['고객이 원하는', '제품을', '만들고 판매합니다']}
+            texts={['고객이 원하는 제품을', '만들고 판매합니다']}
           />
           <Paragraph
             subject="핵심 가치"
