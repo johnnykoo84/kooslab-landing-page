@@ -75,7 +75,7 @@ const SignupForm = () => (
               htmlFor="email"
               className="block text-sm font-medium text-gray-700"
             >
-              이메일
+              이메일
             </label>
 
             <Field
@@ -91,7 +91,7 @@ const SignupForm = () => (
               htmlFor="mobile"
               className="block text-sm font-medium text-gray-700"
             >
-              휴대폰 번호
+              휴대폰 번호
             </label>
 
             <Field
@@ -138,7 +138,7 @@ const SignupForm = () => (
             disabled={isSubmitting}
             className="w-full rounded-md border border-transparent bg-primary-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
           >
-            확인
+            확인
           </button>
         </Form>
       )}
