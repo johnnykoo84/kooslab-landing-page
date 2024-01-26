@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 import { Section } from '@/layout/Section';
-import { NavbarTwoColumns } from '@/navigation/NavbarTwoColumns';
+import NavbarTwoColumns from '@/navigation/NavbarTwoColumns';
 import { Footer } from '@/templates/Footer';
 
 import AIProfileImgSrc from '../assets/eve.png';
