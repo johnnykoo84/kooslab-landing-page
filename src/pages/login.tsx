@@ -26,36 +26,35 @@ const LogIn = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center bg-gray-100">
+    <div className="flex h-screen flex-col bg-gray-100">
       <NavbarTwoColumns logo={<Logo xl />} />
 
-      <div className="mx-auto mt-10 w-96 rounded bg-white p-8 shadow-md">
-        <h2 className="mb-4 text-center text-xl font-bold">Log In</h2>
+      <div className="flex grow items-center justify-center">
+        <div className="mx-auto w-full rounded bg-white p-8 shadow-md sm:w-96">
+          <h2 className="mb-4 text-center text-xl font-bold">Log In</h2>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="name@company.com"
-            required
-            className="w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            placeholder="Password"
-            required
-            className="w-full rounded border px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-600"
-          />
-          <button
-            type="submit"
-            className="w-full rounded bg-blue-600 px-3 py-2 text-white hover:bg-blue-700"
-          >
-            Log In
-          </button>
-        </form>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="name@company.com"
+              required
+              className="input input-bordered w-full"
+            />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              required
+              className="input input-bordered w-full"
+            />
+            <button type="submit" className="btn btn-primary w-full">
+              Log In
+            </button>
+          </form>
+        </div>
       </div>
     </div>
   );

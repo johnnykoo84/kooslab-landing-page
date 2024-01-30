@@ -43,5 +43,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line no-unused-vars
+  // eslint-disable-next-line global-require, import/no-extraneous-dependencies
+  plugins: [require('daisyui')],
 };
