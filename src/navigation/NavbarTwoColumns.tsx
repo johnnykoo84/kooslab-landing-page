@@ -19,7 +19,10 @@ const NavbarTwoColumns = (props: INavbarProps) => (
     <nav className="ml-6 flex items-center">
       <ul className="navbar font-large flex items-center text-3xl text-gray-800">
         <li>
-          <Link href="/about">회사 소개</Link>
+          <Link href="/about">회사소개</Link>
+        </li>
+        <li>
+          <Link href="/pricing">비용</Link>
         </li>
         {props.children}
       </ul>

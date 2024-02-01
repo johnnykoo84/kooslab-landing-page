@@ -2,10 +2,8 @@ import { Field, Form, Formik } from 'formik';
 import React from 'react';
 
 const SignupForm = () => (
-  <div className="mx-auto mt-6 max-w-md rounded bg-white py-6 sm:max-w-xl lg:max-w-2xl">
-    <h1 className="mb-4 text-2xl font-bold">
-      신규 입사자 온보딩 가이드와 템플릿 자료를 이메일 주소로 보내드립니다.
-    </h1>
+  <div className="mx-auto mt-12 max-w-md rounded bg-white p-6 sm:max-w-xl lg:max-w-2xl">
+    <h1 className="mb-4 text-2xl font-bold">업무 매뉴얼 제작 상담 신청</h1>
     <Formik
       initialValues={{
         email: '',
@@ -60,7 +58,7 @@ const SignupForm = () => (
               htmlFor="text"
               className="block text-sm font-medium text-gray-700"
             >
-              대표님 / 사장님 / 담당자 성함
+              대표님 / 사장님 / 점주님 성함
             </label>
             <Field
               id="name"
@@ -107,7 +105,7 @@ const SignupForm = () => (
               htmlFor="textarea"
               className="block text-sm font-medium text-gray-700"
             >
-              신규 직원 업무 안내 시 어떤 어려움이 있는지 간략히 적어주세요
+              조직/매장에서 어떤 어려움이 있는지 간략히 적어주세요
             </label>
             <Field
               id="question"
@@ -127,8 +125,8 @@ const SignupForm = () => (
                 htmlFor="agreement"
                 className="block p-2 text-sm font-medium text-gray-700"
               >
-                [마케팅 동의] 업무 가이드와 템플릿 활용에 대해 직접 안내 받고
-                싶습니다. (선택 사항)
+                [마케팅 동의] 업무 가이드와 매뉴얼 제작 및 향후 솔루션 출시에
+                대해 소식을 안내받고 싶습니다. (선택 사항)
               </label>
             </div>
           </div>
