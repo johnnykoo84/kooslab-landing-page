@@ -1,15 +1,19 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import type { ReactNode } from 'react';
 
+import logo from '@/assets/checklist.png';
+
 type INavbarProps = {
-  logo: ReactNode;
   children?: ReactNode;
 };
 
 const NavbarTwoColumns = (props: INavbarProps) => (
   <div className="sticky top-0 z-50 flex flex-wrap items-center justify-start border-b-2 border-gray-200 bg-gray-100">
-    <div>
-      <Link href="/">{props.logo}</Link>
+    <div className="relative h-12 w-12">
+      <Link href="/">
+        <Image src={logo} alt="Logo" />
+      </Link>
     </div>
 
     <nav className="ml-6 flex items-center">

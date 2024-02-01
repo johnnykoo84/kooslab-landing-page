@@ -7,7 +7,6 @@ import { Footer } from '@/templates/Footer';
 import AIProfileImgSrc from '../assets/eve.png';
 import founderProfileSrc from '../assets/ikoo.png';
 import coFounderProfileSrc from '../assets/mandalorian.png';
-import { Logo } from '../templates/Logo';
 
 type ParagraphProps = {
   subject: string;
@@ -86,7 +85,7 @@ const FounderIntro = () => (
 const About = () => (
   <div className="bg-gray-100">
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />} />
+      <NavbarTwoColumns />
       <div
         className="mx-auto max-w-7xl px-4 py-6 text-gray-800 sm:px-6 lg:px-8"
         style={{ fontSize: 'smaller' }}

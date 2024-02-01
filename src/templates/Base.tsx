@@ -6,14 +6,13 @@ import { AppConfig } from '../utils/AppConfig';
 import { Banner } from './Banner';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
-import { Logo } from './Logo';
 import { VerticalFeatures } from './VerticalFeatures';
 
 const Base = () => (
   <div className="bg-gray-100 text-gray-600 antialiased">
     <Meta title={AppConfig.title} description={AppConfig.description} />
     <Section yPadding="py-6">
-      <NavbarTwoColumns logo={<Logo xl />} />
+      <NavbarTwoColumns />
     </Section>
     <Hero />
     <VerticalFeatures />
