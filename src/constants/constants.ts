@@ -1,6 +1,6 @@
-export const PRICE_BASIC = 190000;
-export const PRICE_PREMIUM = 390000;
-export const PRICE_ENTERPRISE = 990000;
+export const PRICE_BASIC = 390000;
+export const PRICE_PREMIUM = 990000;
+export const PRICE_ENTERPRISE = 3990000;
 
 export const basicBenefits = [
   '현장 상주 최대 8시간 or 1 업무일',
